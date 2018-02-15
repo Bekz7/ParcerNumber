@@ -4,7 +4,7 @@ import pl.bekz.parserNumber.*;
 
 import java.util.Arrays;
 
-import static pl.bekz.parserNumber.NumberInput.getInputNumber;
+
 
 public class ParserNumberRunner {
 
@@ -16,7 +16,7 @@ public class ParserNumberRunner {
             CopyToClipboard toClipboard = new CopyToClipboard();
 
             numberInput.removeBeginZeros();
-            IndexInput indexInput = new IndexInput( getInputNumber() );
+            IndexInput indexInput = new IndexInput( NumberInput.getInputNumber() );
             indexInput.indexSetting();
             indexInput.indexRepairing();
 

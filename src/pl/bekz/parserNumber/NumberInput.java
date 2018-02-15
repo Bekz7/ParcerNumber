@@ -9,7 +9,6 @@ public class NumberInput {
         this.inputNumber = inputNumber;
     }
 
-
     public static String getInputNumber() {
         return inputNumber.replaceAll( "\\D", "" );
     }
@@ -26,13 +25,13 @@ public class NumberInput {
 
     private void removeFrontZeros() {
         if (isZeroInFront()) {
-            inputNumber = getInputNumber().replaceFirst( "0", "" );
+            this.inputNumber = getInputNumber().replaceFirst( "0", "" );
         } else {
             return;
         }
     }
 
-    boolean isZeroInFront() {
+   private boolean isZeroInFront() {
         return getInputNumber().charAt( 0 ) == '0';
     }
 }
