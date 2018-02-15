@@ -1,7 +1,0 @@
-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Åµåâùÿÿÿÿ8á÷®Û˜,
-Qsquid:S2209"5Change this instance-reference to a static reference.(İ»•Ø8†şŞ˜,
-dsquid:S1226"HIntroduce a new variable instead of reusing the parameter "inputNumber".(ã¾ß8šÛÉß˜,
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Û·„”
-Rsquid:S2696"6Make the enclosing method "static" or remove this set.(İ»•Ø8†şŞ˜,

@@ -1,23 +1,39 @@
 package pl.bekz.parserNumber;
 
-import java.util.Scanner;
-
 public class NumberInput {
 
     private static String inputNumber;
 
 
+    public NumberInput(String inputNumber) {
+        this.inputNumber = inputNumber;
+    }
+
+
     public static String getInputNumber() {
-        return inputNumber;
+        return inputNumber.replaceAll( "\\D", "" );
     }
 
-    public void addNumber(String inputNumber) {
-        Scanner in = new Scanner( System.in );
+    public void removeBeginZeros() {
+        char zeroNumberSeeker;
+        do {
+            zeroNumberSeeker = getInputNumber().charAt( 0 );
 
-        System.out.println( "Podaj numer telefonu: " );
-        inputNumber = in.nextLine();
-        this.inputNumber = inputNumber.replace( " ", "" );
+            removeFrontZeros();
+        }
+        while (zeroNumberSeeker == '0');
     }
 
+    private void removeFrontZeros() {
+        if (isZeroInFront()) {
+            inputNumber = getInputNumber().replaceFirst( "0", "" );
+        } else {
+            return;
+        }
+    }
 
+    boolean isZeroInFront() {
+        return getInputNumber().charAt( 0 ) == '0';
+    }
 }
+
