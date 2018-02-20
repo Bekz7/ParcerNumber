@@ -1,5 +1,7 @@
 package pl.bekz.parserNumber;
 
+import java.util.Objects;
+
 public class IndexInput {
     private String inputNumber;
     private final String DL_INDEX = "+49";
@@ -15,15 +17,21 @@ public class IndexInput {
     }
 
     public void indexSetting() {
-        if (!isIndexInFront()) {
+        if (!isNullNumber() && !isIndexInFront()) {
             this.inputNumber = this.DL_INDEX + getInputNumber();
+        } else {
+            return;
         }
     }
 
     public void indexRepairing() {
-        if (isBadIndex()) {
+        if (!isNullNumber() && isBadIndex()) {
             this.inputNumber = getInputNumber().replace( BAD_INDEX, DL_INDEX );
         }
+    }
+
+    private boolean isNullNumber() {
+        return Objects.equals( this.inputNumber, null );
     }
 
     private boolean isIndexInFront() {

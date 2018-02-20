@@ -1,0 +1,6 @@
+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Û·„”
+Jsquid:S2209"5Change this instance-reference to a static reference.(ÌÏ’Î
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ÌÏ’Î
+=squid:S3010"(Remove this assignment of "inputNumber".(õ«ë“
+Jsquid:S2209"5Change this instance-reference to a static reference.(õ«ë“

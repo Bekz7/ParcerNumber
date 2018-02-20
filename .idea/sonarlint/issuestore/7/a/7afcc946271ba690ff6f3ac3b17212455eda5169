@@ -1,0 +1,6 @@
+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Û·„”
+nsquid:S00116"SRename this field "DL_INDEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´Îôõøÿÿÿÿ
+osquid:S00116"TRename this field "BAD_INDEX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïğ›ûÿÿÿÿ
+;squid:S1170"!Make this final field static too.(´Îôõøÿÿÿÿ
+;squid:S1170"!Make this final field static too.(Ïğ›ûÿÿÿÿ

@@ -16,9 +16,9 @@ public class NumberInput {
     public void removeBeginZeros() {
         char zeroNumberSeeker;
         do {
-            zeroNumberSeeker = getInputNumber().charAt( 0 );
-
             removeFrontZeros();
+
+            zeroNumberSeeker = getInputNumber().charAt( 0 );
         }
         while (zeroNumberSeeker == '0');
     }
